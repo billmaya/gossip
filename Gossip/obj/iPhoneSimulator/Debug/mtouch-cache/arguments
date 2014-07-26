@@ -1,0 +1,29 @@
+# Version: 7.0.6.168 (2ed9bc9)
+# [first argument, ignore] # /Users/bmaya/Dropbox/Gossip/Gossip/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/bmaya/Dropbox/Gossip/Gossip/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/bmaya/Dropbox/Gossip/Gossip/bin/iPhoneSimulator/Debug/Gossip.app \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-profiling \
+	-nolink \
+	-sdk \
+	7.0 \
+	-targetver \
+	6.1 \
+	--sgen \
+	--abi=i386 \
+	/Users/bmaya/Dropbox/Gossip/Gossip/bin/iPhoneSimulator/Debug/Gossip.exe \

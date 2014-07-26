@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48436E8F-9520-462A-B979-82ED0ED128DF}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gossip</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Gossip</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer: William Maya (ASMR5D7VYT)</CodesignKey>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>4EA4334B-0F3F-449C-88D3-2966D2E181C4</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BuildIpa>True</BuildIpa>
+    <ConsolePause>False</ConsolePause>
+    <CodesignProvision>FD6452D9-AAD2-4D9F-8AEA-38950B005FC9</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Christopher Crawford (VS8FAX5956)</CodesignKey>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <IpaPackageName />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer: William Maya (ASMR5D7VYT)</CodesignKey>
+    <IpaPackageName />
+    <BuildIpa>true</BuildIpa>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>4EA4334B-0F3F-449C-88D3-2966D2E181C4</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_Resources\" />
+    <Folder Include="_Resources\Backgrounds\" />
+    <Folder Include="_Resources\Buttons\" />
+    <Folder Include="_Resources\Faces\" />
+    <Folder Include="_Resources\Sounds\" />
+    <Folder Include="_Resources\Sounds\Goodbye\" />
+    <Folder Include="_Resources\Sounds\Hello\" />
+    <Folder Include="_Resources\Sounds\Ringtones\" />
+    <Folder Include="_Resources\Faces\adorable\" />
+    <Folder Include="_Resources\Faces\great\" />
+    <Folder Include="_Resources\Faces\hateful\" />
+    <Folder Include="_Resources\Faces\hello\" />
+    <Folder Include="_Resources\Faces\nasty\" />
+    <Folder Include="_Resources\Faces\nice\" />
+    <Folder Include="_Resources\Faces\not nice\" />
+    <Folder Include="_Resources\Faces\pleasant\" />
+    <Folder Include="_Resources\Faces\so-so\" />
+    <Folder Include="_Resources\Faces\unpleasant\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Buttons\" />
+    <Folder Include="Views\Characters\" />
+    <Folder Include="Views\ViewController\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="_Resources\SplashScreens\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Story.cs" />
+    <Compile Include="OptionsViewController.cs" />
+    <Compile Include="OptionsViewController.designer.cs">
+      <DependentUpon>OptionsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipsViewController.cs" />
+    <Compile Include="TipsViewController.designer.cs">
+      <DependentUpon>TipsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buttons\FourButtonView.cs" />
+    <Compile Include="Views\Buttons\FiveButtonView.cs" />
+    <Compile Include="Views\Buttons\SixButtonView.cs" />
+    <Compile Include="Views\Buttons\EasyButtonView.cs" />
+    <Compile Include="Views\Buttons\MediumButtonView.cs" />
+    <Compile Include="Views\Buttons\HardButtonView.cs" />
+    <Compile Include="Views\Buttons\DownArrowButtonView.cs" />
+    <Compile Include="Views\Buttons\EnterButtonView.cs" />
+    <Compile Include="Views\Buttons\RulesButtonView.cs" />
+    <Compile Include="Views\Buttons\TipsButtonView.cs" />
+    <Compile Include="Views\Buttons\UpArrowButtonView.cs" />
+    <Compile Include="Views\Characters\BaraView.cs" />
+    <Compile Include="Views\Characters\EllaView.cs" />
+    <Compile Include="Views\Characters\MaxView.cs" />
+    <Compile Include="Views\Characters\OwenView.cs" />
+    <Compile Include="Views\Characters\MortView.cs" />
+    <Compile Include="Views\Characters\ZoeView.cs" />
+    <Compile Include="Views\HexagonView.cs" />
+    <Compile Include="Views\MessageView.cs" />
+    <Compile Include="Views\TurnView.cs" />
+    <Compile Include="Views\PhaseView.cs" />
+    <Compile Include="Views\ViewController\MainView.cs" />
+    <Compile Include="Views\ViewController\OptionsView.cs" />
+    <Compile Include="Views\ViewController\TipsView.cs" />
+    <Compile Include="Views\Base\ButtonView.cs" />
+    <Compile Include="Views\Base\CharacterView.cs" />
+    <Compile Include="Views\Base\TextView.cs" />
+    <Compile Include="HelpViewController.cs" />
+    <Compile Include="HelpViewController.designer.cs">
+      <DependentUpon>HelpViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buttons\RightArrowOptionsView.cs" />
+    <Compile Include="Views\Buttons\LeftArrowTipsView.cs" />
+    <Compile Include="Views\ViewController\HelpView.cs" />
+    <Compile Include="Views\Buttons\RightArrowHelpView.cs" />
+    <Compile Include="Views\Buttons\LeftArrowHelpView.cs" />
+    <Compile Include="Views\Buttons\PlayAgainButtonView.cs" />
+    <Compile Include="SplashScreenViewController.cs" />
+    <Compile Include="SplashScreenViewController.designer.cs">
+      <DependentUpon>SplashScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewController\SplashScreenView.cs" />
+    <Compile Include="Views\VersionView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainViewController_iPad.xib" />
+    <InterfaceDefinition Include="MainViewController_iPhone.xib" />
+    <InterfaceDefinition Include="OptionsViewController_iPhone.xib" />
+    <InterfaceDefinition Include="OptionsViewController_iPad.xib" />
+    <InterfaceDefinition Include="TipsViewController_iPhone.xib" />
+    <InterfaceDefinition Include="TipsViewController_iPad.xib" />
+    <InterfaceDefinition Include="HelpViewController_iPhone.xib" />
+    <InterfaceDefinition Include="HelpViewController_iPad.xib" />
+    <InterfaceDefinition Include="SplashScreenViewController_iPhone.xib" />
+    <InterfaceDefinition Include="SplashScreenViewController_iPad.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="_Resources\Faces\not nice\Bara.png" />
+    <BundleResource Include="_Resources\Faces\not nice\Ella.png" />
+    <BundleResource Include="_Resources\Faces\not nice\Max.png" />
+    <BundleResource Include="_Resources\Faces\not nice\Mort.png" />
+    <BundleResource Include="_Resources\Faces\not nice\Owen.png" />
+    <BundleResource Include="_Resources\Faces\not nice\Zoe.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="_Resources\Rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Resources\Faces\adorable\Bara.png" />
+    <Content Include="_Resources\Faces\adorable\Ella.png" />
+    <Content Include="_Resources\Faces\adorable\Max.png" />
+    <Content Include="_Resources\Faces\adorable\Mort.png" />
+    <Content Include="_Resources\Faces\adorable\Owen.png" />
+    <Content Include="_Resources\Faces\adorable\Zoe.png" />
+    <Content Include="_Resources\Faces\great\Bara.png" />
+    <Content Include="_Resources\Faces\great\Ella.png" />
+    <Content Include="_Resources\Faces\great\Max.png" />
+    <Content Include="_Resources\Faces\great\Mort.png" />
+    <Content Include="_Resources\Faces\great\Owen.png" />
+    <Content Include="_Resources\Faces\great\Zoe.png" />
+    <Content Include="_Resources\Faces\hateful\Bara.png" />
+    <Content Include="_Resources\Faces\hateful\Ella.png" />
+    <Content Include="_Resources\Faces\hateful\Max.png" />
+    <Content Include="_Resources\Faces\hateful\Mort.png" />
+    <Content Include="_Resources\Faces\hateful\Owen.png" />
+    <Content Include="_Resources\Faces\hateful\Zoe.png" />
+    <Content Include="_Resources\Faces\hello\Bara.png" />
+    <Content Include="_Resources\Faces\hello\Ella.png" />
+    <Content Include="_Resources\Faces\hello\Max.png" />
+    <Content Include="_Resources\Faces\hello\Mort.png" />
+    <Content Include="_Resources\Faces\hello\Owen.png" />
+    <Content Include="_Resources\Faces\hello\Zoe.png" />
+    <Content Include="_Resources\Faces\nasty\Bara.png" />
+    <Content Include="_Resources\Faces\nasty\Ella.png" />
+    <Content Include="_Resources\Faces\nasty\Max.png" />
+    <Content Include="_Resources\Faces\nasty\Mort.png" />
+    <Content Include="_Resources\Faces\nasty\Owen.png" />
+    <Content Include="_Resources\Faces\nasty\Zoe.png" />
+    <Content Include="_Resources\Faces\nice\Bara.png" />
+    <Content Include="_Resources\Faces\nice\Ella.png" />
+    <Content Include="_Resources\Faces\nice\Max.png" />
+    <Content Include="_Resources\Faces\nice\Mort.png" />
+    <Content Include="_Resources\Faces\nice\Owen.png" />
+    <Content Include="_Resources\Faces\nice\Zoe.png" />
+    <Content Include="_Resources\Faces\pleasant\Bara.png" />
+    <Content Include="_Resources\Faces\pleasant\Ella.png" />
+    <Content Include="_Resources\Faces\pleasant\Max.png" />
+    <Content Include="_Resources\Faces\pleasant\Mort.png" />
+    <Content Include="_Resources\Faces\pleasant\Owen.png" />
+    <Content Include="_Resources\Faces\pleasant\Zoe.png" />
+    <Content Include="_Resources\Faces\so-so\Bara.png" />
+    <Content Include="_Resources\Faces\so-so\Ella.png" />
+    <Content Include="_Resources\Faces\so-so\Max.png" />
+    <Content Include="_Resources\Faces\so-so\Mort.png" />
+    <Content Include="_Resources\Faces\so-so\Owen.png" />
+    <Content Include="_Resources\Faces\so-so\Zoe.png" />
+    <Content Include="_Resources\Faces\unpleasant\Bara.png" />
+    <Content Include="_Resources\Faces\unpleasant\Ella.png" />
+    <Content Include="_Resources\Faces\unpleasant\Max.png" />
+    <Content Include="_Resources\Faces\unpleasant\Mort.png" />
+    <Content Include="_Resources\Faces\unpleasant\Owen.png" />
+    <Content Include="_Resources\Faces\unpleasant\Zoe.png" />
+    <Content Include="_Resources\Buttons\4Button.png" />
+    <Content Include="_Resources\Buttons\4ButtonPressed.png" />
+    <Content Include="_Resources\Buttons\5Button.png" />
+    <Content Include="_Resources\Buttons\5ButtonPressed.png" />
+    <Content Include="_Resources\Buttons\6Button.png" />
+    <Content Include="_Resources\Buttons\6ButtonPressed.png" />
+    <Content Include="_Resources\Buttons\downArrow.png" />
+    <Content Include="_Resources\Buttons\downArrowDisabled.png" />
+    <Content Include="_Resources\Buttons\downArrowPressed.png" />
+    <Content Include="_Resources\Buttons\easy.png" />
+    <Content Include="_Resources\Buttons\easyPressed.png" />
+    <Content Include="_Resources\Buttons\enter.png" />
+    <Content Include="_Resources\Buttons\enterDisabled.png" />
+    <Content Include="_Resources\Buttons\enterPressed.png" />
+    <Content Include="_Resources\Buttons\Exit.png" />
+    <Content Include="_Resources\Buttons\ExitDisabled.png" />
+    <Content Include="_Resources\Buttons\ExitPressed.png" />
+    <Content Include="_Resources\Buttons\hard.png" />
+    <Content Include="_Resources\Buttons\hardPressed.png" />
+    <Content Include="_Resources\Buttons\leaveOptions.png" />
+    <Content Include="_Resources\Buttons\leaveOptionsPressed.png" />
+    <Content Include="_Resources\Buttons\leftArrow.png" />
+    <Content Include="_Resources\Buttons\leftArrowDisabled.png" />
+    <Content Include="_Resources\Buttons\leftArrowPressed.png" />
+    <Content Include="_Resources\Buttons\medium.png" />
+    <Content Include="_Resources\Buttons\mediumPressed.png" />
+    <Content Include="_Resources\Buttons\PlayAgain.png" />
+    <Content Include="_Resources\Buttons\PlayAgainDisabled.png" />
+    <Content Include="_Resources\Buttons\PlayAgainPressed.png" />
+    <Content Include="_Resources\Buttons\rightArrow.png" />
+    <Content Include="_Resources\Buttons\rightArrowDisabled.png" />
+    <Content Include="_Resources\Buttons\rightArrowPressed.png" />
+    <Content Include="_Resources\Buttons\tips.png" />
+    <Content Include="_Resources\Buttons\tipsDisabled.png" />
+    <Content Include="_Resources\Buttons\tipsPressed.png" />
+    <Content Include="_Resources\Buttons\upArrow.png" />
+    <Content Include="_Resources\Buttons\upArrowDisabled.png" />
+    <Content Include="_Resources\Buttons\upArrowPressed.png" />
+    <Content Include="_Resources\Buttons\rulesPressed.png" />
+    <Content Include="_Resources\Buttons\rules.png" />
+    <Content Include="_Resources\Buttons\rulesDisabled.png" />
+    <Content Include="_Resources\Backgrounds\Bara.png" />
+    <Content Include="_Resources\Backgrounds\Ella.png" />
+    <Content Include="_Resources\Backgrounds\Max.png" />
+    <Content Include="_Resources\Backgrounds\Mort.png" />
+    <Content Include="_Resources\Backgrounds\Owen.png" />
+    <Content Include="_Resources\Backgrounds\Zoe.png" />
+    <Content Include="_Resources\QuotationMarks.png" />
+    <Content Include="_Resources\Tips0.png" />
+    <Content Include="_Resources\Tips1.png" />
+    <Content Include="_Resources\Tips2.png" />
+    <Content Include="_Resources\Sounds\Hello\Bara.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Bara.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Ella.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Max.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Mort.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Owen.wav" />
+    <Content Include="_Resources\Sounds\Goodbye\Zoe.wav" />
+    <Content Include="_Resources\Sounds\Hello\Ella.wav" />
+    <Content Include="_Resources\Sounds\Hello\Max.wav" />
+    <Content Include="_Resources\Sounds\Hello\Mort.wav" />
+    <Content Include="_Resources\Sounds\Hello\Owen.wav" />
+    <Content Include="_Resources\Sounds\Hello\Zoe.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Bara.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Ella.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Max.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Mort.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Owen.wav" />
+    <Content Include="_Resources\Sounds\Ringtones\Zoe.wav" />
+    <Content Include="_Resources\Sounds\psst.wav" />
+    <Content Include="_Resources\Sounds\Ring.wav" />
+    <Content Include="_Resources\SplashScreen.png" />
+    <Content Include="_Resources\SplashScreens\SplashScreen_1024x748.png" />
+    <Content Include="_Resources\SplashScreens\SplashScreen_1136x640.png" />
+    <Content Include="_Resources\SplashScreens\SplashScreen_2048x1496.png" />
+    <Content Include="_Resources\SplashScreens\SplashScreen_480x320.png" />
+    <Content Include="_Resources\SplashScreens\SplashScreen_960x640.png" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="null" scope="text/x-csharp" />
+          <CSharpFormattingPolicy ElseIfNewLinePlacement="SameLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeDelegateDeclarationParentheses="False" AfterDelegateDeclarationParameterComma="True" NewParentheses="False" SpacesBeforeBrackets="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+          <TextStylePolicy FileWidth="120" TabsToSpaces="False" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

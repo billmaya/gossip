@@ -1,0 +1,4 @@
+/Users/billmaya/Dropbox/Gossip/Gossip/obj/iPhone/AppStore/mtouch-cache/Link/Gossip.exe
+/Users/billmaya/Dropbox/Gossip/Gossip/obj/iPhone/AppStore/mtouch-cache/Link/monotouch.dll
+/Users/billmaya/Dropbox/Gossip/Gossip/obj/iPhone/AppStore/mtouch-cache/Link/System.dll
+/Users/billmaya/Dropbox/Gossip/Gossip/obj/iPhone/AppStore/mtouch-cache/Link/mscorlib.dll
