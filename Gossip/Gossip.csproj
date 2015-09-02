@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{48436E8F-9520-462A-B979-82ED0ED128DF}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -129,6 +129,7 @@
     <Folder Include="Views\ViewController\" />
     <Folder Include="Views\Base\" />
     <Folder Include="_Resources\SplashScreens\" />
+    <Folder Include="Xib\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -196,16 +197,16 @@
     <Compile Include="Views\Buttons\StoreButtonView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="MainViewController_iPad.xib" />
-    <InterfaceDefinition Include="MainViewController_iPhone.xib" />
-    <InterfaceDefinition Include="OptionsViewController_iPhone.xib" />
-    <InterfaceDefinition Include="OptionsViewController_iPad.xib" />
-    <InterfaceDefinition Include="TipsViewController_iPhone.xib" />
-    <InterfaceDefinition Include="TipsViewController_iPad.xib" />
-    <InterfaceDefinition Include="HelpViewController_iPhone.xib" />
-    <InterfaceDefinition Include="HelpViewController_iPad.xib" />
-    <InterfaceDefinition Include="SplashScreenViewController_iPhone.xib" />
-    <InterfaceDefinition Include="SplashScreenViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\HelpViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\HelpViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Xib\MainViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\MainViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Xib\OptionsViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\OptionsViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Xib\SplashScreenViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\SplashScreenViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Xib\TipsViewController_iPad.xib" />
+    <InterfaceDefinition Include="Xib\TipsViewController_iPhone.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
