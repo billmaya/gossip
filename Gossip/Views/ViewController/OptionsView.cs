@@ -34,7 +34,8 @@ namespace Gossip
 			using (CGContext gctx = UIGraphics.GetCurrentContext ()) {
 
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width));
+				gctx.FillRect(new RectangleF(0, 0, 
+					UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height, UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width));
 			}
 
 			this.AddSubview(fourButton);
@@ -71,8 +72,8 @@ namespace Gossip
 			else yOffset = 65f;
 
 			DrawText("How Many Players?",
-			          (UIScreen.MainScreen.Bounds.Height / 4f) - (fourButton.dimensions.Width / 2f) - Story.OptionOffset, 
-			          UIScreen.MainScreen.Bounds.Width - yOffset);
+				(UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height / 4f) - (fourButton.dimensions.Width / 2f) - Story.OptionOffset, 
+				UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width - yOffset);
 
 			// HACK: 71-73
 			yOffset = 0f;

@@ -35,10 +35,12 @@ namespace Gossip
 			using (CGContext gctx = UIGraphics.GetCurrentContext ()) {
 
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width));
+				gctx.FillRect(new RectangleF(0, 0, 
+					UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height, UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width));
 			}
 
-			splashScreenImage.Draw(new RectangleF(new PointF(0f, 0f), new SizeF(UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width)));
+			splashScreenImage.Draw(new RectangleF(new PointF(0f, 0f), 
+				new SizeF(UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height, UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width)));
 
 			this.AddSubview(version);
 			version.SetNeedsDisplay();

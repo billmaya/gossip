@@ -18,8 +18,8 @@ namespace Gossip
 
 				// HACK:
 				dimensions = new SizeF(uiButtonImages[0].Size.Width, uiButtonImages[0].Size.Height);
-				location = new PointF((UIScreen.MainScreen.Bounds.Height / 4f) - (dimensions.Width / 2f) - Story.OptionOffset, 
-				                      UIScreen.MainScreen.Bounds.Width - (dimensions.Height + 80f));
+				location = new PointF((UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height / 4f) - (dimensions.Width / 2f) - Story.OptionOffset, 
+					UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width - (dimensions.Height + 80f));
 			}
 			else 
 			{
@@ -28,8 +28,8 @@ namespace Gossip
 
 				// HACK:
 				dimensions = new SizeF(uiButtonImages[0].Size.Width, uiButtonImages[0].Size.Height);
-				location = new PointF((UIScreen.MainScreen.Bounds.Height / 4f) - (dimensions.Width / 2f) - Story.OptionOffset, 
-				                      UIScreen.MainScreen.Bounds.Width - (dimensions.Height + 20f));
+				location = new PointF((UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height / 4f) - (dimensions.Width / 2f) - Story.OptionOffset, 
+					UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width - (dimensions.Height + 20f));
 			}
 
 			ModifyFrame();
