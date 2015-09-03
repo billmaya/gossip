@@ -23,8 +23,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 
-Gossip/bin/*
-Gossip/obj/*
+Gossip/bin/
+Gossip/obj/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
