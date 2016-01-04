@@ -29,9 +29,6 @@ namespace Gossip
 
 		public HexagonView ()
 		{
-
-//			mvc = ((MainView)this.Superview).mvc;
-
 			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
 			{
 				Radius = 250;
@@ -42,9 +39,9 @@ namespace Gossip
 				Radius = 145;
 				FaceSize = 64;
 			}
-
-			ScreenWidth = (int)UIScreen.MainScreen.Bounds.Height;
-			ScreenHeight = (int)UIScreen.MainScreen.Bounds.Width;
+				
+			ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+			ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
 
 			float WidthMod = 2.73066666666667f;
 			float HeightMod = 2.32727272727273f;
