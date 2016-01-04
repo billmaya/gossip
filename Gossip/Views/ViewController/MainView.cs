@@ -44,7 +44,7 @@ namespace Gossip
 			using (CGContext gctx = UIGraphics.GetCurrentContext ()) {
 				
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width));
+				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height));
 			}
 
 			RemoveAllSubViews();
