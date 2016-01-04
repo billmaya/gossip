@@ -1,25 +1,19 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad.7.0" />
+﻿<Properties StartupItem="Gossip/Gossip.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.9.2" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Gossip/Views/ViewController/OptionsView.cs">
     <Files>
       <File FileName="Gossip/Resources.cs" Line="1" Column="1" />
-      <File FileName="Gossip/Story.cs" Line="9" Column="2" />
-      <File FileName="Gossip/Views/ViewController/OptionsView.cs" Line="67" Column="4" />
+      <File FileName="Gossip/Story.cs" Line="1" Column="1" />
+      <File FileName="Gossip/Views/ViewController/OptionsView.cs" Line="77" Column="1" />
       <File FileName="Gossip/Views/Buttons/EasyButtonView.cs" Line="1" Column="1" />
       <File FileName="Gossip/Views/Buttons/MediumButtonView.cs" Line="1" Column="1" />
       <File FileName="Gossip/Views/Buttons/HardButtonView.cs" Line="1" Column="1" />
+      <File FileName="Gossip/Views/ViewController/MainView.cs" Line="1" Column="1" />
+      <File FileName="Gossip/Views/Buttons/FourButtonView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/MainViewController.cs" line="764" column="1" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/Views/HexagonView.cs" line="122" column="1" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/Views/Buttons/RightArrowOptionsView.cs" line="66" column="1" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/OptionsViewController.cs" line="43" column="1" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/SplashScreenViewController.cs" line="32" column="39" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/MainViewController.cs" line="805" column="1" />
-      <Breakpoint enabled="false" file="/Users/bmaya/Dropbox/Gossip/Gossip/Views/Buttons/PlayAgainButtonView.cs" line="72" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../../../Projects/Kea/Dev/Field/Monocross/MonoTouch.Dialog/Elements.cs" line="1361" offsetX="687" offsetY="23484" expression="picker" liveUpdate="False" />

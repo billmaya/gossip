@@ -26,6 +26,9 @@ bld/
 Gossip/[Bb]in/
 Gossip/[Oo]bj/
 
+Gossip/bin/iPhoneSimulator/Debug/
+Gossip/obj/iPhoneSimulator/Debug/
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
