@@ -36,26 +36,26 @@ namespace Gossip
 			using (CGContext gctx = UIGraphics.GetCurrentContext ()) {
 
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width));
+				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height));
 			}
 
 			switch (Story.DifficultyLevel)
 			{
 				case 0:
 				if (ipad) tipImage = Resources.easyTips;
-				else tipImage = Resources.easyTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Height * scaleBy, UIScreen.MainScreen.Bounds.Width * scaleBy));
+				else tipImage = Resources.easyTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Width * scaleBy, UIScreen.MainScreen.Bounds.Height * scaleBy));
 				break;
 				case 1:
 				if (ipad) tipImage = Resources.mediumTips;
-				else tipImage = Resources.easyTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Height * scaleBy, UIScreen.MainScreen.Bounds.Width * scaleBy));
+				else tipImage = Resources.mediumTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Width * scaleBy, UIScreen.MainScreen.Bounds.Height * scaleBy));
 				break;
 				case 2:
 				if (ipad) tipImage = Resources.hardTips;
-				else tipImage = Resources.easyTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Height * scaleBy, UIScreen.MainScreen.Bounds.Width * scaleBy));
+				else tipImage = Resources.hardTips.Scale(new SizeF(UIScreen.MainScreen.Bounds.Width * scaleBy, UIScreen.MainScreen.Bounds.Height * scaleBy));
 				break;
 			}
 
-			tipImage.Draw(new PointF((UIScreen.MainScreen.Bounds.Height - tipImage.Size.Width) / 2f, 0f));
+			tipImage.Draw(new PointF((UIScreen.MainScreen.Bounds.Width - tipImage.Size.Width) / 2f, 0f));
 
 			this.AddSubview(leftArrowButton);
 			leftArrowButton.SetNeedsDisplay();
