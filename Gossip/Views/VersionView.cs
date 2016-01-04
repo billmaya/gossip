@@ -13,7 +13,7 @@ namespace Gossip
 		{
 			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
 			{
-				location = new PointF(UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height - 80f /*70f*/, 2f);
+				location = new PointF(UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height - 80f /*70f*/, 10f /*2f*/);
 				dimensions = new SizeF(70f /*60f*/, 30f);
 				translationY = 20f;
 
