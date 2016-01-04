@@ -20,7 +20,7 @@ namespace Gossip
 
 		public const float OptionOffset = 70f;
 
-		public static string Version = "1.0";
+		public static string Version = "1.1";
 
 		public enum Character { Bara = 0, Owen = 1, Max = 2, Ella = 3, Mort = 4, Zoe = 5 }
 		public enum SoundType { Ring = 0, Hello = 1, Goodbye = 2 }
