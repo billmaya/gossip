@@ -23,10 +23,8 @@
     <ConsolePause>False</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>True</MtouchDebug>
-    <MtouchI18n>
-    </MtouchI18n>
-    <MtouchArch>ARMv7</MtouchArch>
-    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchSdkVersion>9.2</MtouchSdkVersion>
     <MtouchProfiling>true</MtouchProfiling>
     <MtouchUseSGen>true</MtouchUseSGen>
   </PropertyGroup>

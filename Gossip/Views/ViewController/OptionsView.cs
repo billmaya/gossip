@@ -67,22 +67,23 @@ namespace Gossip
 			}
 
 			// HACK: 62-64
-			float yOffset = 0f;
-			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad) yOffset = 160f;
-			else yOffset = 65f;
+			float heightOffset = 0f;
+			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad) heightOffset = 160f;
+			else heightOffset = 45f; //65f;
 
 			DrawText("How Many Players?",
-				(UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Height / 4f) - (fourButton.dimensions.Width / 2f) - Story.OptionOffset, 
-				UIScreen.MainScreen.FixedCoordinateSpace.Bounds.Width - yOffset);
+				(UIScreen.MainScreen.Bounds.Width / 4f) - (fourButton.dimensions.Width / 2f) - Story.OptionOffset,
+				UIScreen.MainScreen.Bounds.Height - heightOffset);
 
 			// HACK: 71-73
-			yOffset = 0f;
-			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad) yOffset = 50f;
-			else yOffset = 15f;
+			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
+				heightOffset = 50f;
+			else
+				heightOffset = 40f; //15f;
 
-			DrawText("Easy", fourButton.location.X - 10f, fourButton.location.Y + yOffset);
-			DrawText("Medium", fiveButton.location.X - 60f, fiveButton.location.Y + yOffset);
-			DrawText("Hard", sixButton.location.X - 10f, sixButton.location.Y + yOffset); 
+			DrawText("Easy", fourButton.location.X - 10f, fourButton.location.Y + heightOffset);
+			DrawText("Medium", fiveButton.location.X - 60f, fiveButton.location.Y + heightOffset);
+			DrawText("Hard", sixButton.location.X - 10f, sixButton.location.Y + heightOffset); 
 		}
 
 		internal void DrawText(string text, float x, float y)
@@ -105,7 +106,7 @@ namespace Gossip
 
 				gctx.SaveState();
 
-				gctx.TranslateCTM(0, this.Frame.Width);
+				gctx.TranslateCTM(0, this.Frame.Height);
 				gctx.ScaleCTM(1, -1);
 
 				gctx.ShowTextAtPoint (x, y, text);
