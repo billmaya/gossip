@@ -27,7 +27,7 @@ namespace Gossip
 			}
 
 			dimensions = new SizeF(uiButtonImages[0].Size.Width, uiButtonImages[0].Size.Height);
-			location = new PointF(UIScreen.MainScreen.Bounds.Height - (dimensions.Width + 5f), dimensions.Width + 10f);
+			location = new PointF(UIScreen.MainScreen.Bounds.Width - (dimensions.Width + 5f), dimensions.Width + 10f);
 			ModifyFrame();
 		}
 
