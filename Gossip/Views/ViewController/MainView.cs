@@ -149,7 +149,7 @@ namespace Gossip
 					yOffset = 5;
 				}
 
-				gctx.TranslateCTM(0, this.Frame.Width);
+				gctx.TranslateCTM(0, this.Frame.Height);
 				gctx.ScaleCTM(1, -1);
 
 				string name;
