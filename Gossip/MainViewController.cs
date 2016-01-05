@@ -75,6 +75,11 @@ namespace Gossip
 			}
 		}
 
+		public override bool PrefersStatusBarHidden()
+		{
+			return true;
+		}
+
 		private void GameLoop()
 		{
 //			Console.WriteLine("GameLoop hit - {0}", DateTime.Now);
