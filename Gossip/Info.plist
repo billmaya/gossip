@@ -13,7 +13,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>6.1</string>
+	<string>9.2</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>CFBundleIconFiles</key>
@@ -27,9 +27,16 @@
 	<true/>
 	<key>CFBundleDisplayName</key>
 	<string>Teen Talk</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.erasmatazz.teentalk</string>
+	<string>net.wwcreations.gossip</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
 </dict>
 </plist>
