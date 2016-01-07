@@ -13,7 +13,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>9.2</string>
+	<string>8.0</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>CFBundleIconFiles</key>
