@@ -30,7 +30,8 @@ namespace Gossip
 		public MainViewController ()
 			: base (UserInterfaceIdiomIsPhone ? "MainViewController_iPhone" : "MainViewController_iPad", null)
 		{
-			mainView = (MainView)this.View;
+			//mainView = (MainView)this.View;
+			mainView = new MainView();
 			mainView.mvc = this;
 
 			InitializeData();
@@ -46,16 +47,23 @@ namespace Gossip
 			
 			// Release any cached data, images, etc that aren't in use.
 		}
-		
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 
-			// Perform any additional setup after loading the view, typically from a nib.
+			/*mainView = (MainView)this.View;
+			//mainView.mvc = this;
+
+			InitializeData();
+			InitializeGame();
+
+			GameLoop();*/
 		}
-		
+
 		public override void ViewWillAppear (bool animated)
 		{
+
 		}
 
 		public override void ViewWillDisappear(bool animated)
