@@ -5,6 +5,7 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 
 * This is an iPhone/iPad game that I was hired to port from Desktop Java.
+* It's published in the App Store (https://goo.gl/jqIKFq).
 * You can view the development history at this link https://goo.gl/Sm4qAC
 
 ### How do I get set up? ###
