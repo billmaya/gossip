@@ -12,5 +12,5 @@ This README would normally document whatever steps are necessary to get your app
 
 * It's written in C# .NET using the Xamarin Platform
 * You'll have to download Xamarin Studio to run the code - https://www.xamarin.com/platform
-* To run open the Gossip/Gossip.csproj file
+* To run open the Gossip/Gossip.sln file
 * Right now it will run in the iOS simulator fine but not on any actual devices (there's a reflection exception error that's being thrown that I'm currently in the middle of debugging).
