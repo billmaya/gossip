@@ -1,15 +1,53 @@
 ﻿<Properties StartupItem="Gossip/Gossip.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gossip/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/9.8.2.22/lib/mono/2.1/Xamarin.iOS.Common.targets">
     <Files>
+      <File FileName="Gossip/Views/HexagonView.cs" Line="243" Column="11" />
       <File FileName="Gossip/Info.plist" />
+      <File FileName="gossip Status" />
+      <File FileName="Gossip/Views/Characters/ZoeView.cs" Line="2" Column="1" />
+      <File FileName="Gossip/Views/MessageView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/TurnView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/PhaseView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/ViewController/MainView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/ViewController/OptionsView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/FourButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/FiveButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/SixButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/EasyButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/MediumButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/HardButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/DownArrowButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/EnterButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/RulesButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/TipsButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/UpArrowButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Characters/BaraView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Characters/EllaView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Characters/MaxView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Characters/OwenView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Characters/MortView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/ViewController/TipsView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Base/ButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Base/CharacterView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Base/TextView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/RightArrowOptionsView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/LeftArrowTipsView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/ViewController/HelpView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/RightArrowHelpView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/LeftArrowHelpView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/PlayAgainButtonView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/ViewController/SplashScreenView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/VersionView.cs" Line="2" Column="20" />
+      <File FileName="Gossip/Views/Buttons/StoreButtonView.cs" Line="2" Column="20" />
+      <File FileName="../../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/9.8.2.22/lib/mono/2.1/Xamarin.iOS.Common.targets" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../../../Projects/Kea/Dev/Field/Monocross/MonoTouch.Dialog/Elements.cs" line="1361" offsetX="687" offsetY="23484" expression="picker" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
-  <MonoDevelop.Ide.ItemProperties.Gossip PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.Gossip PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.bce34e6f0d5f65ccafaf6d4a7620b015cc095468" />
 </Properties>
