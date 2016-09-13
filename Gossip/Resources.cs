@@ -83,7 +83,7 @@ namespace Gossip
 
 		// Buttons
 
-		public static UIImage rulesEnabled { get { return UIImage.FromFile("_Resources/Buttons/rules.png"); } }
+		public static UIImage rulesEnabled { get { return UIImage.FromFile("_Resources/Buttons/Rules.png"); } }
 		public static UIImage rulesPressed { get { return UIImage.FromFile("_Resources/Buttons/rulesPressed.png"); } }
 		public static UIImage rulesDisabled { get { return UIImage.FromFile("_Resources/Buttons/rulesDisabled.png"); } }
 

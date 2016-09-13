@@ -30,8 +30,7 @@ namespace Gossip
 		public MainViewController ()
 			: base (UserInterfaceIdiomIsPhone ? "MainViewController_iPhone" : "MainViewController_iPad", null)
 		{
-			//mainView = (MainView)this.View;
-			mainView = new MainView();
+			mainView = (MainView)this.View;
 			mainView.mvc = this;
 
 			InitializeData();
@@ -51,19 +50,10 @@ namespace Gossip
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
-			/*mainView = (MainView)this.View;
-			//mainView.mvc = this;
-
-			InitializeData();
-			InitializeGame();
-
-			GameLoop();*/
 		}
 
 		public override void ViewWillAppear (bool animated)
 		{
-
 		}
 
 		public override void ViewWillDisappear(bool animated)
@@ -72,7 +62,7 @@ namespace Gossip
 
 		}
 
-		[Obsolete]
+		/*[Obsolete]
 		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
 		{
 			// Return true for supported orientations
@@ -81,7 +71,7 @@ namespace Gossip
 			} else {
 				return true;
 			}
-		}
+		}*/
 
 		public override bool PrefersStatusBarHidden()
 		{

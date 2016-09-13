@@ -38,5 +38,7 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
+	<key>CFBundleName</key>
+	<string>Teen Talk</string>
 </dict>
 </plist>
