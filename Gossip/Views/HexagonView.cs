@@ -225,8 +225,8 @@ namespace Gossip
 
 			using (gctx = UIGraphics.GetCurrentContext ())
 			{
-				float[] dashed = { 10, 8 };
-				float[] solid = { 1, 0 };
+				nfloat[] dashed = { 10, 8 };
+				nfloat[] solid = { 1, 0 };
 				int affinity = 0;
 
 				if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
@@ -381,7 +381,7 @@ namespace Gossip
 		// This version handles indirect statements of affinity
 		internal void HilightSpoke(int fromCharacter, int toCharacter, int speaker)
 		{
-			float[] solid = { 1, 0 };
+			nfloat[] solid = { 1, 0 };
 			int perceivedAffinity;
 
 			if (speaker == Story.Player)

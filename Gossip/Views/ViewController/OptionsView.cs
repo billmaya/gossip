@@ -85,7 +85,7 @@ namespace Gossip
 			DrawText("Hard", sixButton.location.X - 10f, sixButton.location.Y + heightOffset); 
 		}
 
-		internal void DrawText(string text, float x, float y)
+		internal void DrawText(string text, nfloat x, nfloat y)
 		{
 			using (CGContext gctx = UIGraphics.GetCurrentContext())
 			{
