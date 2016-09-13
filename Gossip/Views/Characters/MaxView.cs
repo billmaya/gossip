@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -30,20 +30,20 @@ namespace Gossip
 			}
 			else
 			{
-				uiCharacterImages[0] = Resources.maxHateful.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[1] = Resources.maxNasty.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[2] = Resources.maxNotNice.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[3] = Resources.maxUnpleasant.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[4] = Resources.maxSoSo.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[5] = Resources.maxPleasant.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[6] = Resources.maxNice.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[7] = Resources.maxGreat.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[8] = Resources.maxAdorable.Scale(new SizeF(64.0f, 64.0f));
-				uiCharacterImages[9] = Resources.maxHello.Scale(new SizeF(64.0f, 64.0f));
+				uiCharacterImages[0] = Resources.maxHateful.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[1] = Resources.maxNasty.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[2] = Resources.maxNotNice.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[3] = Resources.maxUnpleasant.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[4] = Resources.maxSoSo.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[5] = Resources.maxPleasant.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[6] = Resources.maxNice.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[7] = Resources.maxGreat.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[8] = Resources.maxAdorable.Scale(new CGSize(64.0f, 64.0f));
+				uiCharacterImages[9] = Resources.maxHello.Scale(new CGSize(64.0f, 64.0f));
 			}
 
-			dimensions = new SizeF(uiCharacterImages[0].Size.Width, uiCharacterImages[0].Size.Height);
-			location = new PointF(Story.CharacterLocations[characterId, 0], Story.CharacterLocations[characterId, 1]);
+			dimensions = new CGSize(uiCharacterImages[0].Size.Width, uiCharacterImages[0].Size.Height);
+			location = new CGPoint(Story.CharacterLocations[characterId, 0], Story.CharacterLocations[characterId, 1]);
 			ModifyFrame();
 		}
 

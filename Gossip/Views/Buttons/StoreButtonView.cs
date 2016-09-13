@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -19,13 +19,13 @@ namespace Gossip
 			}
 			else 
 			{
-				uiButtonImages[0] = Resources.storeEnabled.Scale(new SizeF(64.0f, 64.0f));
-				uiButtonImages[1] = Resources.storePressed.Scale(new SizeF(64.0f, 64.0f));
-				uiButtonImages[2] = Resources.storeDisabled.Scale(new SizeF(64.0f, 64.0f));
+				uiButtonImages[0] = Resources.storeEnabled.Scale(new CGSize(64.0f, 64.0f));
+				uiButtonImages[1] = Resources.storePressed.Scale(new CGSize(64.0f, 64.0f));
+				uiButtonImages[2] = Resources.storeDisabled.Scale(new CGSize(64.0f, 64.0f));
 			}
 
-			dimensions = new SizeF(uiButtonImages[0].Size.Width, uiButtonImages[0].Size.Height);
-			location = new PointF(UIScreen.MainScreen.Bounds.Height - (dimensions.Width + 20f), 5);
+			dimensions = new CGSize(uiButtonImages[0].Size.Width, uiButtonImages[0].Size.Height);
+			location = new CGPoint(UIScreen.MainScreen.Bounds.Height - (dimensions.Width + 20f), 5);
 
 			ModifyFrame();
 
@@ -35,15 +35,15 @@ namespace Gossip
 				this.disabled = true;
 		}
 
-		public override void Draw(RectangleF rect)
+		public override void Draw(CGRect rect)
 		{
 			base.Draw(rect);
 
 			using (gctx = UIGraphics.GetCurrentContext ()) 
 			{
-				if (this.pressed) uiButtonImages[1].Draw(new PointF(0f, 0f));
-				else if (this.disabled) uiButtonImages[2].Draw(new PointF(0f, 0f));
-				else uiButtonImages[0].Draw (new PointF(0f, 0f));
+				if (this.pressed) uiButtonImages[1].Draw(new CGPoint(0f, 0f));
+				else if (this.disabled) uiButtonImages[2].Draw(new CGPoint(0f, 0f));
+				else uiButtonImages[0].Draw (new CGPoint(0f, 0f));
 			}
 		}
 

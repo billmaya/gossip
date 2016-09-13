@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -41,14 +41,14 @@ namespace Gossip
 		{
 		}
 
-		public override void Draw (RectangleF rect)
+		public override void Draw (CGRect rect)
 		{
 			base.Draw (rect);
 
 			using (CGContext gctx = UIGraphics.GetCurrentContext ()) {
 				
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height));
+				gctx.FillRect(new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height));
 			}
 
 			RemoveAllSubViews();

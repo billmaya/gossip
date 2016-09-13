@@ -1,16 +1,16 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
 	[Register("TextView")]
 	public class TextView : UIView 
 	{
-		protected SizeF dimensions;
-		protected PointF location;
+		protected CGSize dimensions;
+		protected CGPoint location;
 
 		protected string text;
 		protected float fontSize;
@@ -28,7 +28,7 @@ namespace Gossip
 
 		protected void ModifyFrame()
 		{
-			RectangleF frame = this.Frame;
+			CGRect frame = this.Frame;
 			
 			frame.Width = dimensions.Width;
 			frame.Height = dimensions.Height;

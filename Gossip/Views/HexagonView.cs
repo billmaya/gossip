@@ -1,8 +1,7 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -46,7 +45,7 @@ namespace Gossip
 			float WidthMod = 2.73066666666667f;
 			float HeightMod = 2.32727272727273f;
 
-			RectangleF frame = this.Frame;
+			CGRect frame = this.Frame;
 			frame.Width = ScreenWidth / WidthMod;  //375;
 			frame.Height = ScreenHeight / HeightMod;  //330;
 			frame.X = ScreenWidth / 2 - frame.Width / 2;
@@ -80,14 +79,14 @@ namespace Gossip
 			}
 		}
 
-		public override void Draw (RectangleF rect)
+		public override void Draw (CGRect rect)
 		{
 			base.Draw (rect);
 
 			using (gctx = UIGraphics.GetCurrentContext ()) {
 				
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, this.Frame.Width, this.Frame.Height));
+				gctx.FillRect(new CGRect(0, 0, this.Frame.Width, this.Frame.Height));
 
 				if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
 				{
@@ -141,7 +140,7 @@ namespace Gossip
 							gctx.BeginPath();
 
 							gctx.SetStrokeColor(Story.AffinityLevelColor[iAffinity].CGColor);
-							PointF[] line = new PointF[] { new PointF(Story.HexagonX[i], Story.HexagonY[i]), new PointF(tipX, tipY) };
+							CGPoint[] line = new CGPoint[] { new CGPoint(Story.HexagonX[i], Story.HexagonY[i]), new CGPoint(tipX, tipY) };
 							
 							gctx.MoveTo(line[0].X, line[0].Y);
 							gctx.AddLineToPoint(line[1].X, line[1].Y);
@@ -161,10 +160,10 @@ namespace Gossip
 							gctx.TranslateCTM(line[1].X, line[1].Y);
 							gctx.RotateCTM((float)(angleInRadians -  Math.PI / 2));
 							
-							PointF[] arrowhead = new PointF[] {
-								new PointF (0.0f - arrowHeadSize, 0.0f),
-								new PointF (0.0f, 0.0f - arrowHeadSize),
-								new PointF (0.0f + arrowHeadSize, 0.0f)
+							CGPoint[] arrowhead = new CGPoint[] {
+								new CGPoint (0.0f - arrowHeadSize, 0.0f),
+								new CGPoint (0.0f, 0.0f - arrowHeadSize),
+								new CGPoint (0.0f + arrowHeadSize, 0.0f)
 							};
 							
 							gctx.MoveTo(arrowhead[0].X, arrowhead[0].Y);
@@ -262,7 +261,7 @@ namespace Gossip
 				gctx.BeginPath();
 
 				gctx.SetStrokeColor(Story.AffinityLevelColor[affinity/*Story.CurrentAffinity*/].CGColor);
-				PointF[] line = new PointF[] { new PointF(Story.HexagonX[fromCharacter], Story.HexagonY[fromCharacter]), new PointF(tipX, tipY) };
+				CGPoint[] line = new CGPoint[] { new CGPoint(Story.HexagonX[fromCharacter], Story.HexagonY[fromCharacter]), new CGPoint(tipX, tipY) };
 				
 				gctx.MoveTo(line[0].X, line[0].Y);
 				gctx.AddLineToPoint(line[1].X, line[1].Y);
@@ -282,10 +281,10 @@ namespace Gossip
 				gctx.TranslateCTM(line[1].X, line[1].Y);
 				gctx.RotateCTM((float)(angleInRadians -  Math.PI / 2));
 				
-				PointF[] arrowhead = new PointF[] {
-					new PointF (0.0f - arrowHeadSize, 0.0f),
-					new PointF (0.0f, 0.0f - arrowHeadSize),
-					new PointF (0.0f + arrowHeadSize, 0.0f)
+				CGPoint[] arrowhead = new CGPoint[] {
+					new CGPoint (0.0f - arrowHeadSize, 0.0f),
+					new CGPoint (0.0f, 0.0f - arrowHeadSize),
+					new CGPoint (0.0f + arrowHeadSize, 0.0f)
 				};
 				
 				gctx.MoveTo(arrowhead[0].X, arrowhead[0].Y);
@@ -413,7 +412,7 @@ namespace Gossip
 			gctx.BeginPath();
 
 			gctx.SetStrokeColor(Story.AffinityLevelColor[perceivedAffinity].CGColor);
-			PointF[] line = new PointF[] { new PointF(Story.HexagonX[fromCharacter], Story.HexagonY[fromCharacter]), new PointF(tipX, tipY) };
+			CGPoint[] line = new CGPoint[] { new CGPoint(Story.HexagonX[fromCharacter], Story.HexagonY[fromCharacter]), new CGPoint(tipX, tipY) };
 			
 			gctx.MoveTo(line[0].X, line[0].Y);
 			gctx.AddLineToPoint(line[1].X, line[1].Y);
@@ -433,10 +432,10 @@ namespace Gossip
 			gctx.TranslateCTM(line[1].X, line[1].Y);
 			gctx.RotateCTM((float)(angleInRadians -  Math.PI / 2));
 			
-			PointF[] arrowhead = new PointF[] {
-				new PointF (0.0f - arrowHeadSize, 0.0f),
-				new PointF (0.0f, 0.0f - arrowHeadSize),
-				new PointF (0.0f + arrowHeadSize, 0.0f)
+			CGPoint[] arrowhead = new CGPoint[] {
+				new CGPoint (0.0f - arrowHeadSize, 0.0f),
+				new CGPoint (0.0f, 0.0f - arrowHeadSize),
+				new CGPoint (0.0f + arrowHeadSize, 0.0f)
 			};
 			
 			gctx.MoveTo(arrowhead[0].X, arrowhead[0].Y);

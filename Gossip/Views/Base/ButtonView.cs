@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -16,8 +16,8 @@ namespace Gossip
 		protected CGContext gctx;
 		protected UIImage[] uiButtonImages = new UIImage[3];
 
-		internal SizeF dimensions;
-		internal PointF location;
+		internal CGSize dimensions;
+		internal CGPoint location;
 
 //		public MainViewController mvc { get; set; }
 
@@ -48,7 +48,7 @@ namespace Gossip
 
 		protected void ModifyFrame()
 		{
-			RectangleF frame = this.Frame;
+			CGRect frame = this.Frame;
 			
 			frame.Width = dimensions.Width;
 			frame.Height = dimensions.Height;

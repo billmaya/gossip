@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace Gossip
 {
@@ -14,15 +14,15 @@ namespace Gossip
 		protected UIImage uiQuotationMarks;
 		protected UIImage uiEmptyQuotationMarks;
 
-		protected SizeF dimensions;
-		protected PointF location;
+		protected CGSize dimensions;
+		protected CGPoint location;
 
 		internal bool halo;
 		internal UIColor haloColor;
 		internal bool fillHalo;
 
 		internal bool quoted;
-		private PointF quotePosition;
+		private CGPoint quotePosition;
 
 		public int Affinity { get; set; }
 
@@ -30,38 +30,38 @@ namespace Gossip
 		{
 			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad) 
 			{
-				uiQuotationMarks = Resources.quotationMarks.Scale(new SizeF(136.5f, 37.5f));
-				quotePosition = new PointF(-5f, 0f);
+				uiQuotationMarks = Resources.quotationMarks.Scale(new CGSize(136.5f, 37.5f));
+				quotePosition = new CGPoint(-5f, 0f);
 			}
 			else
 			{
-				uiQuotationMarks = Resources.quotationMarks.Scale(new SizeF(68.25f, 16.75f));
-				quotePosition = new PointF(-2f, 0f);
+				uiQuotationMarks = Resources.quotationMarks.Scale(new CGSize(68.25f, 16.75f));
+				quotePosition = new CGPoint(-2f, 0f);
 			}
 		}
 
-		public override void Draw(RectangleF rect)
+		public override void Draw(CGRect rect)
 		{
 			base.Draw (rect);
 
 			using (CGContext gctx = UIGraphics.GetCurrentContext())
 			{
 								gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.FillRect(new RectangleF(0, 0, this.Frame.Width, this.Frame.Height));
+				gctx.FillRect(new CGRect(0, 0, this.Frame.Width, this.Frame.Height));
 
 				if (!halo && !quoted)
 				{
-					uiCharacterImages[Affinity].Draw(new PointF(0.0f, 0.0f));
+					uiCharacterImages[Affinity].Draw(new CGPoint(0.0f, 0.0f));
 				}
 				else if (halo && !quoted)
 				{
 					DrawHalo(haloColor, fillHalo);
-					uiCharacterImages[Affinity].Draw(new PointF(0.0f, 0.0f));
+					uiCharacterImages[Affinity].Draw(new CGPoint(0.0f, 0.0f));
 				}
 				else if (halo && quoted)
 				{
 					DrawHalo(haloColor, fillHalo);
-					uiCharacterImages[Affinity].Draw(new PointF(0.0f, 0.0f));
+					uiCharacterImages[Affinity].Draw(new CGPoint(0.0f, 0.0f));
 					DrawQuotes();
 				}
 
@@ -82,7 +82,7 @@ namespace Gossip
 				gctx.SetLineWidth(2.0f);
 				gctx.SetStrokeColor(color.CGColor);
 				gctx.SetFillColor(color.CGColor);
-				gctx.AddEllipseInRect(new RectangleF(new PointF(0f, 0f), dimensions));
+				gctx.AddEllipseInRect(new CGRect(new CGPoint(0f, 0f), dimensions));
 				gctx.ClosePath();
 
 				if (filled) gctx.DrawPath(CGPathDrawingMode.FillStroke); 
@@ -97,7 +97,7 @@ namespace Gossip
 				gctx.SetLineWidth(2.0f);
 				gctx.SetStrokeColor(UIColor.Black.CGColor);
 				gctx.SetFillColor(UIColor.Black.CGColor);
-				gctx.AddEllipseInRect(new RectangleF(new PointF(0f, 0f), dimensions));
+				gctx.AddEllipseInRect(new CGRect(new CGPoint(0f, 0f), dimensions));
 				gctx.ClosePath();
 
 				gctx.DrawPath(CGPathDrawingMode.FillStroke); 
@@ -108,13 +108,13 @@ namespace Gossip
 		{
 			using (CGContext gctx = UIGraphics.GetCurrentContext()) 
 			{
-				uiQuotationMarks.Draw(new RectangleF(quotePosition, new SizeF(uiQuotationMarks.Size.Width, uiQuotationMarks.Size.Height)));
+				uiQuotationMarks.Draw(new CGRect(quotePosition, new CGSize(uiQuotationMarks.Size.Width, uiQuotationMarks.Size.Height)));
 			}
 		}
 
 		protected void ModifyFrame()
 		{
-			RectangleF frame = this.Frame;
+			CGRect frame = this.Frame;
 
 			frame.Width = dimensions.Width;
 			frame.Height = dimensions.Height;
@@ -131,7 +131,7 @@ namespace Gossip
 			UITouch touch = touches.AnyObject as UITouch;
 			if (touch != null) 
 			{
-				PointF pt = touch.LocationInView(this);
+				CGPoint pt = touch.LocationInView(this);
 				Console.WriteLine(pt.ToString());
 
 				Story.Selected = characterId;
