@@ -23,8 +23,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 
-Gossip/[Bb]in/
-Gossip/[Oo]bj/
+Gossip/[Bb]in/*.*
+Gossip/[Oo]bj/*.*
 
 Gossip/bin/iPhoneSimulator/Debug/
 Gossip/obj/iPhoneSimulator/Debug/

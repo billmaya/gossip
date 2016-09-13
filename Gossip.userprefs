@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Gossip/Gossip.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.iPhone 5s" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gossip/Info.plist">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Gossip/MainViewController.cs" Line="1" Column="1" />
+      <File FileName="Gossip/MainViewController.cs" Line="34" Column="1" />
       <File FileName="Gossip/OptionsViewController.cs" Line="1" Column="1" />
       <File FileName="Gossip/Views/Buttons/RightArrowOptionsView.cs" Line="1" Column="1" />
+      <File FileName="Gossip/Views/ViewController/MainView.cs" Line="24" Column="1" />
       <File FileName="Gossip/Info.plist" />
+      <File FileName="Gossip/Views/Buttons/RulesButtonView.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

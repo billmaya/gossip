@@ -46,14 +46,12 @@ namespace Gossip
 			
 			// Release any cached data, images, etc that aren't in use.
 		}
-		
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
-			// Perform any additional setup after loading the view, typically from a nib.
 		}
-		
+
 		public override void ViewWillAppear (bool animated)
 		{
 		}
@@ -64,7 +62,7 @@ namespace Gossip
 
 		}
 
-		[Obsolete]
+		/*[Obsolete]
 		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
 		{
 			// Return true for supported orientations
@@ -73,7 +71,7 @@ namespace Gossip
 			} else {
 				return true;
 			}
-		}
+		}*/
 
 		public override bool PrefersStatusBarHidden()
 		{

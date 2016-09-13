@@ -37,6 +37,10 @@ namespace Gossip
 		{
 		}
 
+		public MainView()
+		{
+		}
+
 		public override void Draw (RectangleF rect)
 		{
 			base.Draw (rect);

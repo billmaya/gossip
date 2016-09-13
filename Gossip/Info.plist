@@ -13,7 +13,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>9.2</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>CFBundleIconFiles</key>
@@ -38,5 +38,7 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
+	<key>CFBundleName</key>
+	<string>Teen Talk</string>
 </dict>
 </plist>
