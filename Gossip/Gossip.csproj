@@ -217,10 +217,6 @@
     <BundleResource Include="_Resources\Faces\not nice\Mort.png" />
     <BundleResource Include="_Resources\Faces\not nice\Owen.png" />
     <BundleResource Include="_Resources\Faces\not nice\Zoe.png" />
-    <BundleResource Include="Resources\Icon.png" />
-    <BundleResource Include="Resources\Icon-72.png" />
-    <BundleResource Include="Resources\Icon%402x.png" />
-    <BundleResource Include="Resources\Icon-72%402x.png" />
     <BundleResource Include="_Resources\Rules.png" />
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Icon-App-29x29%401x.png" />
@@ -376,6 +372,21 @@
     <Content Include="_Resources\Buttons\storeButton.png" />
     <Content Include="_Resources\Buttons\storeButtonDisabled.png" />
     <Content Include="_Resources\Buttons\storeButtonPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-72.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-72%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-76x76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-76x76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons-3.appiconset\Icon-App-40x40%403x.png" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

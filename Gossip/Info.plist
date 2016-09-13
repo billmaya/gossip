@@ -16,13 +16,6 @@
 	<string>9.3</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Icon</string>
-		<string>Icon-72</string>
-		<string>Icon@2x</string>
-		<string>Icon-72@2x</string>
-	</array>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>CFBundleDisplayName</key>
@@ -40,5 +33,7 @@
 	<string>1.1</string>
 	<key>CFBundleName</key>
 	<string>Teen Talk</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcons-3.appiconset</string>
 </dict>
 </plist>
